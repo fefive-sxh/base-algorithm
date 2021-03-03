@@ -1,0 +1,2 @@
+*.py    diff=python
+*.go    diff=golang
