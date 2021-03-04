@@ -28,7 +28,8 @@ func FindDupNoMove(nums []int) int {
 			}
 		}
 		// 判断左边还是右边
-		if count > (mid - start + 1) {
+		//
+		if count > mid-start {
 			end = mid
 		} else {
 			start = mid + 1

@@ -7,13 +7,13 @@ import "testing"
 // 借助帮助函数, 可以使得测试的主逻辑看起来更加清晰
 type dupNumSlice struct {
 	nums   []int
-	result int
+	expect int
 }
 
 func createFindDupTestCase(t *testing.T, d *dupNumSlice) {
 	t.Helper()
-	if ans := FindDuplication(d.nums); ans != d.result {
-		t.Fatalf("%v expected %d, but %d got", d.nums, ans, d.result)
+	if ans := FindDuplication(d.nums); ans != d.expect {
+		t.Fatalf("%v expected %d, but %d got", d.nums, d.expect, ans)
 	}
 }
 
